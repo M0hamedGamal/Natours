@@ -1,6 +1,5 @@
 .row {
   max-width: $grid-width;
-  background-color: #777;
   margin: 0 auto;
   &:not(:last-child) {
     margin-bottom: $space-vertical;
@@ -10,8 +9,6 @@
 
   [class^="col-"] {
     float: left;
-    background-color: orangered;
-    color: #fff;
     &:not(:last-child) {
       margin-right: $space-horizontal;
     }
