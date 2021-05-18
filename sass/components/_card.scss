@@ -1,5 +1,5 @@
 .card {
-  // FONCTIONALITY
+  // FUNCTIONALITY
   position: relative;
   height: 52rem;
   perspective: 150rem;
@@ -11,7 +11,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    transition: all .8s ease;
+    transition: all 0.8s ease;
     backface-visibility: hidden;
     overflow: hidden;
     border-radius: 0.3rem;
@@ -172,5 +172,4 @@
     font-size: 6rem;
     font-weight: 100;
   }
-
 }
