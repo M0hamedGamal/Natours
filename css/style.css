@@ -403,15 +403,15 @@ p.paragraph {
 
 .popup {
   position: fixed;
-  width: 100%;
-  height: 100vh;
   top: 0;
   left: 0;
-  z-index: 3000;
+  width: 100%;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
-  transition: all 0.2s;
+  z-index: 3000;
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  transition: all 0.3s; }
   .popup__content {
     position: absolute;
     top: 50%;
@@ -423,6 +423,7 @@ p.paragraph {
     border-radius: 3px;
     overflow: hidden;
     display: table;
+    opacity: 0;
     transform: translate(-50%, -50%) scale(0);
     transition: all 0.4s 0.3s; }
   .popup__close:link, .popup__close:visited {
@@ -443,8 +444,8 @@ p.paragraph {
   .popup__right {
     width: 66.666667%;
     display: table-cell;
-    padding: 3rem 5rem;
-    vertical-align: middle; }
+    vertical-align: middle;
+    padding: 3rem 5rem; }
   .popup__img {
     display: block;
     width: 100%; }
@@ -459,6 +460,7 @@ p.paragraph {
     opacity: 1;
     visibility: visible; }
   .popup:target .popup__content {
+    opacity: 1;
     transform: translate(-50%, -50%) scale(1); }
 
 .story {
